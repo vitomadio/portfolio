@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://vitomadio.github.io/portfolio",
   "scripts": {
-    "build": "webpack --watch"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +25,7 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
